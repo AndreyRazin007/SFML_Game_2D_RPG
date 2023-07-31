@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="class_state\State.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="class_game\Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="game_state\GameState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="class_state\State.hpp">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="class_game\Game.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="game_state\GameState.hpp">
+      <Filter>States</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="State">
+      <UniqueIdentifier>{aa65ada4-89a8-4a67-bb82-a8158ee836f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{f2f74021-33b9-40f1-95ec-3df4f641ffad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States">
+      <UniqueIdentifier>{d1a8bd27-3ced-4c04-a857-5ba566db8919}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
