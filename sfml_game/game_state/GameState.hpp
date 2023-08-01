@@ -16,8 +16,8 @@ public:
 	/* Functions for SFML. */
 	void end_state();
 
+	void update_keybinds(const float &date_time);
 	void update(const float &date_time);
-
 	void render(sf::RenderTarget *target = nullptr);
 };
 

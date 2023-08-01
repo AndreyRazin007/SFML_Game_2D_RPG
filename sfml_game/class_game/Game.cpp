@@ -56,6 +56,11 @@ Game::~Game()
 }
 
 /* Functions for SFML. */
+void Game::end_application()
+{
+	std::cout << "Ending Application!\n";
+}
+
 void Game::run()
 {
 	while (this->m_window->isOpen())
@@ -105,5 +110,18 @@ void Game::update()
 	if (not this->m_states.empty())
 	{
 		this->m_states.top()->update(this->m_date_time);
+
+		if (this->m_states.top()->get_quit())
+		{
+			this->m_states.top()->end_state();
+			delete this->m_states.top();
+			this->m_states.pop();
+		}
+	}
+	/* Application ending. */
+	else
+	{
+		this->end_application();
+		this->m_window->close();
 	}
 }

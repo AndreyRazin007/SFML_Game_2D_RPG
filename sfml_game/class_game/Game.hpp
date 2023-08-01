@@ -27,19 +27,23 @@ public:
 
 	/* Functions for SFML. */
 
-	/* Update date and time for application. */
-	void update_date_time();
-	
+	/* Regular functions. */
+	void end_application();
+
 	/* Starting the application. */
 	void run();
 
 	/* Drawing the application. */
 	void render();
 
-	/* Updating the application. */
-	void update();
-	
+	/* Updating SFML events for application. */
 	void update_sfml_event();
+
+	/* Update date and time for application. */
+	void update_date_time();
+
+	/* Updating application. */
+	void update();
 };
 
 #endif GAME_HPP
