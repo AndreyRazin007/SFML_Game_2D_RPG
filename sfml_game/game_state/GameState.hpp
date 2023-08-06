@@ -2,15 +2,15 @@
 #define GAME_STATE_HPP
 
 #include "../class_state/State.hpp"
+#include "../class_entity/Entity.hpp"
 
 class GameState : public State
 {
 private:
-
+	Entity m_player{};
 
 public:
 	GameState(sf::RenderWindow *window);
-
 	virtual ~GameState();
 
 	/* Functions for SFML. */
@@ -21,4 +21,4 @@ public:
 	void render(sf::RenderTarget *target = nullptr);
 };
 
-#endif GAME_STATE_HPP
+#endif

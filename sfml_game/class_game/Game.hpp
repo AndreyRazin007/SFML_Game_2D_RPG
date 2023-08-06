@@ -46,4 +46,4 @@ public:
 	void update();
 };
 
-#endif GAME_HPP
+#endif

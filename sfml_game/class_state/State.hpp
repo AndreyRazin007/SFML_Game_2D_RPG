@@ -4,13 +4,10 @@
 #include "SFML/Graphics.hpp"
 
 #include <vector>
-#include <fstream>
-#include <sstream>
-#include <iostream>
 
 class State
 {
-private:
+protected:
 	/* Options. */
 	sf::RenderWindow *m_window{};
 	std::vector<sf::Texture> m_textures{};
@@ -30,4 +27,4 @@ public:
 	virtual void render(sf::RenderTarget *target = nullptr) = 0;
 };
 
-#endif STATE_HPP
+#endif

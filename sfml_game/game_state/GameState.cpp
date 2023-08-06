@@ -1,5 +1,7 @@
 #include "GameState.hpp"
 
+#include <iostream>
+
 GameState::GameState(sf::RenderWindow *window)
     : State(window)
 {
@@ -23,12 +25,17 @@ void GameState::update(const float &date_time)
 {
     this->update_keybinds(date_time);
 
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-    {
-        std::cout << "Pressed A\n";
-    }
+    this->m_player.update(date_time);
 }
 
 void GameState::render(sf::RenderTarget *target)
 {
+	if (target)
+	{
+
+	}
+	else
+	{
+		this->m_player.render(this->m_window);
+	}
 }

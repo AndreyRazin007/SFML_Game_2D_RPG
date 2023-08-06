@@ -11,6 +11,9 @@
     <ClCompile Include="game_state\GameState.cpp">
       <Filter>States</Filter>
     </ClCompile>
+    <ClCompile Include="class_entity\Entity.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="class_state\State.hpp">
@@ -22,6 +25,9 @@
     <ClInclude Include="game_state\GameState.hpp">
       <Filter>States</Filter>
     </ClInclude>
+    <ClInclude Include="class_entity\Entity.hpp">
+      <Filter>Entities</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="State">
@@ -32,6 +38,9 @@
     </Filter>
     <Filter Include="States">
       <UniqueIdentifier>{d1a8bd27-3ced-4c04-a857-5ba566db8919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{7cba4869-1824-469e-8eb8-f816fdf919c7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

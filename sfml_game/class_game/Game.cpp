@@ -1,5 +1,10 @@
 #include "Game.hpp"
 
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <fstream>
+
 /* Initialization functions. */
 void Game::init_window()
 {
