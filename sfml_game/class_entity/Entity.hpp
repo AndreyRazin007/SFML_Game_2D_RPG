@@ -14,9 +14,14 @@ public:
 	virtual ~Entity();
 
 	/* Functions. */
+
+	/* Drawing the main character. */
+	virtual void render(sf::RenderTarget *target);
+
+	/* Main character movement. */
 	virtual void move(const float &date_time, const float x, const float y);
 
-	virtual void render(sf::RenderTarget *target);
+	/* Main character update. */
 	virtual void update(const float &date_time);
 };
 

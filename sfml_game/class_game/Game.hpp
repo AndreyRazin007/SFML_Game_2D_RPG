@@ -8,17 +8,24 @@
 class Game
 {
 private:
-	/* Options. */
 	sf::RenderWindow *m_window{};
 	sf::Event m_event {};
 	sf::Clock m_date_time_clock{};
-
+	
 	float m_date_time{};
 
 	std::stack<State*> m_states{};
+	std::map<std::string, int64_t> m_supported_keys{};
 
 	/* Initialization functions. */
+
+	/* Initialization window. */
 	void init_window();
+	
+	/* Key processing. */
+	void init_keys();
+	
+	/* Status processing. */
 	void init_states();
 
 public:
@@ -27,14 +34,11 @@ public:
 
 	/* Functions for SFML. */
 
-	/* Regular functions. */
-	void end_application();
+	/* Drawing the application. */
+	void render();
 
 	/* Starting the application. */
 	void run();
-
-	/* Drawing the application. */
-	void render();
 
 	/* Updating SFML events for application. */
 	void update_sfml_event();
@@ -44,6 +48,9 @@ public:
 
 	/* Updating application. */
 	void update();
+
+	/* Regular functions. */
+	void end_application();
 };
 
 #endif
